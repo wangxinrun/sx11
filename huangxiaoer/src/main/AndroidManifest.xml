@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwie.huangxiaoer">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".app.MApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.WelActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SaoActivity" />
+        <activity android:name=".activity.ChangeNewsActivity" />
+        <activity android:name=".activity.LikeShopActivity" />
+        <activity android:name=".activity.CheapActivity" />
+        <activity android:name=".activity.IdeaTellActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.ListActivity"></activity>
+    </application>
+
+</manifest>
